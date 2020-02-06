@@ -1,0 +1,36 @@
+.project {
+  width: 100%;
+  height: 100%;
+
+  &-wrap {
+    background-color: red;
+    width: inherit;
+    height: 300px;
+    display: flex;
+    align-items: center;
+
+    &--gallery {
+      background-color: #111111;
+    }
+
+    &--mishka {
+      background-color: floralwhite;
+    }
+
+    &--cat {
+      background-color: mediumaquamarine;
+    }
+
+    &--device {
+      background-color: lightblue;
+    }
+  }
+
+  &__logo {
+    &--gallery {
+      background: url("../../images/png_sprite/gallery.png") no-repeat;
+      width: 331px;
+      height: 249px;
+    }
+  }
+}
