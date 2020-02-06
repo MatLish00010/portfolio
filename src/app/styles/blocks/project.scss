@@ -9,13 +9,17 @@
     display: flex;
     align-items: center;
     opacity: 0.4;
-    transition: 0.3s;
+    transition: 0.5s;
 
     &--gallery {
       background-color: #111111;
 
       &:hover {
         opacity: 1;
+      }
+
+      &:hover .project__logo--gallery {
+        transform: scale(0.7);
       }
     }
 
@@ -25,6 +29,10 @@
       &:hover {
         opacity: 1;
       }
+
+      &:hover .project__logo--mishka {
+        transform: scale(0.7);
+      }
     }
 
     &--cat {
@@ -32,6 +40,10 @@
 
       &:hover {
         opacity: 1;
+      }
+
+      &:hover .project__logo--cat {
+        transform: scale(0.7);
       }
     }
 
@@ -41,10 +53,16 @@
       &:hover {
         opacity: 1;
       }
+
+      &:hover .project__logo--device {
+        transform: scale(0.7);
+      }
     }
   }
 
   &__logo {
+    transition: 0.3s;
+
     &--gallery {
       transform: translateX(2px);
       background: url("../../images/png_sprite/gallery.png") no-repeat;
@@ -54,8 +72,9 @@
 
     &--mishka {
       background: url("../../images/png_icon/mishka.png") no-repeat 100%;
+      background-size: 100%;
       height: 300px;
-      width: 520px;
+      width: 226px;
     }
 
     &--cat {
