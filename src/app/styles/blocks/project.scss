@@ -8,26 +8,45 @@
     height: 300px;
     display: flex;
     align-items: center;
+    opacity: 0.4;
+    transition: 0.3s;
 
     &--gallery {
       background-color: #111111;
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     &--mishka {
       background-color: #fbfbfb;
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     &--cat {
-      background-color: mediumaquamarine;
+      background-color: #ffffff;
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     &--device {
-      background-color: lightblue;
+      background-color: #f7e296;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
   &__logo {
     &--gallery {
+      transform: translateX(2px);
       background: url("../../images/png_sprite/gallery.png") no-repeat;
       width: 331px;
       height: 249px;
@@ -37,6 +56,18 @@
       background: url("../../images/png_icon/mishka.png") no-repeat 100%;
       height: 300px;
       width: 520px;
+    }
+
+    &--cat {
+      background: url("../../images/png_icon/cat.png") no-repeat 100%;
+      height: 200px;
+      width: 156px;
+    }
+
+    &--device {
+      background: url("../../images/png_sprite/logo.png") no-repeat;
+      height: 38px;
+      width: 166px;
     }
   }
 }
